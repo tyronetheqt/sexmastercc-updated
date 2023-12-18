@@ -21,6 +21,7 @@ public enum GLSLShaders {
     STORM("/shaders/storm.fsh"),
     WAIFU("/shaders/waifu.fsh"),
     DICK("/shaders/dick.fsh"),
+    KYS("/shaders/kys.fsh"),
     DESERT("/shaders/desert.fsh"),
     MARIO("/shaders/mario.fsh"),
     MONSTER("/shaders/monster.fsh"),

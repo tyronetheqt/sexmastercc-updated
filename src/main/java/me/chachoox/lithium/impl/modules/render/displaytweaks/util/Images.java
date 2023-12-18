@@ -5,7 +5,8 @@ public enum Images {
     BLUE_NEBULA("lithium/textures/screen/blue_nebula.png"),
     PURPLE("lithium/textures/screen/purple.png"),
     RED_BLACK("lithium/textures/screen/red_black.png"),
-    BANDHU("lithium/textures/screen/aetra_gang.png");
+    BANDHU("lithium/textures/screen/aetra_gang.png"),
+    PLATEAU("lithium/textures/screen/plateau.png");
 
     final String image;
 
