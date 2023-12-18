@@ -6,7 +6,8 @@ public enum Images {
     PURPLE("lithium/textures/screen/purple.png"),
     RED_BLACK("lithium/textures/screen/red_black.png"),
     BANDHU("lithium/textures/screen/aetra_gang.png"),
-    PLATEAU("lithium/textures/screen/plateau.png");
+    PLATEAU("lithium/textures/screen/plateau.png"),
+    CAT("lithium/textures/screen/sexmaster_cat.png");
 
     final String image;
 
