@@ -38,6 +38,7 @@ import me.chachoox.lithium.impl.modules.misc.pvpinfo.PvPInfo;
 import me.chachoox.lithium.impl.modules.misc.smartreply.SmartReply;
 import me.chachoox.lithium.impl.modules.misc.spammer.Spammer;
 import me.chachoox.lithium.impl.modules.misc.stresser.Stresser;
+import me.chachoox.lithium.impl.modules.misc.suicide.Suicide;
 import me.chachoox.lithium.impl.modules.misc.timer.Timer;
 import me.chachoox.lithium.impl.modules.misc.visualrange.VisualRange;
 import me.chachoox.lithium.impl.modules.movement.elytrafly.ElytraFly;
@@ -186,6 +187,7 @@ public class ModuleManager {
         register(new PingSpoof());
         register(new SmartReply());
         register(new Spammer());
+        register(new Suicide());
 
         /**
          **     Movement Modules
