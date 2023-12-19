@@ -26,7 +26,7 @@ public class CornerClip extends Module {
 
     protected final NumberProperty<Float> updates =
             new NumberProperty<>(10.0f, 1.0f, 30.0f, 0.1f,
-                    new String[]{"Udates", "update", "up"},
+                    new String[]{"Updates", "update", "up"},
                     "idk lol"
             );
 

@@ -17,6 +17,7 @@ import me.chachoox.lithium.impl.modules.combat.offhand.Offhand;
 import me.chachoox.lithium.impl.modules.combat.selffill.SelfFill;
 import me.chachoox.lithium.impl.modules.misc.announcer.Announcer;
 import me.chachoox.lithium.impl.modules.misc.antiinteract.AntiInteract;
+import me.chachoox.lithium.impl.modules.misc.autokit.AutoKit;
 import me.chachoox.lithium.impl.modules.misc.autoreply.AutoReply;
 import me.chachoox.lithium.impl.modules.misc.chatappend.ChatAppend;
 import me.chachoox.lithium.impl.modules.misc.chattimestamps.ChatTimeStamps;
@@ -188,6 +189,7 @@ public class ModuleManager {
         register(new SmartReply());
         register(new Spammer());
         register(new Suicide());
+        register(new AutoKit());
 
         /**
          **     Movement Modules
