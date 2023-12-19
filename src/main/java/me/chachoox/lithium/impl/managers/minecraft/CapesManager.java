@@ -80,7 +80,7 @@ public class CapesManager extends SubscriberImpl {
     private static final ResourceLocation SR_CAPE = new ResourceLocation("lithium/textures/capes/srcape.png");
     private static final ResourceLocation AETRA_CAPE = new ResourceLocation("lithium/textures/capes/aetracape.png");
     private static final ResourceLocation CPV_CAPE = new ResourceLocation("lithium/textures/capes/cpvcape.png");
-    private static final ResourceLocation USOMI_CAPE = new ResourceLocation("lithium/textures/capes/cpvcape.png");
+    private static final ResourceLocation USOMI_CAPE = new ResourceLocation("lithium/textures/capes/hoshinocape.png");
     private static final ResourceLocation NOM_CAPE = new ResourceLocation("lithium/textures/capes/nomcape.png");
 
     public static ResourceLocation getResourceLocation(UUID id) {
