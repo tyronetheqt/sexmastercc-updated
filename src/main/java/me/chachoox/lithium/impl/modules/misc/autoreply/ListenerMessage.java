@@ -56,9 +56,16 @@ public class ListenerMessage extends ModuleListener<AutoReply, PacketEvent.Recei
     }
 
     private String getCoords() {
-        return "XYZ: "
-                + (int) mc.player.posX + ", "
-                + (int) mc.player.posY + ", "
-                + (int) mc.player.posZ;
+        if (module.customMessage.getValue()) {
+            return "yo yo whas good my nigga gigga my cords are: " +
+                    + (int) mc.player.posX + ", "
+                    + (int) mc.player.posY + ", "
+                    + (int) mc.player.posZ;
+        } else {
+            return "XYZ: "
+                    + (int) mc.player.posX + ", "
+                    + (int) mc.player.posY + ", "
+                    + (int) mc.player.posZ;
+        }
     }
 }

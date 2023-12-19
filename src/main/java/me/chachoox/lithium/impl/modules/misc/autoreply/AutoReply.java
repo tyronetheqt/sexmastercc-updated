@@ -4,6 +4,8 @@ import me.chachoox.lithium.api.module.Category;
 import me.chachoox.lithium.api.module.Module;
 import me.chachoox.lithium.api.property.EnumProperty;
 import me.chachoox.lithium.api.property.NumberProperty;
+import me.chachoox.lithium.api.property.Property;
+import me.chachoox.lithium.api.property.StringProperty;
 import me.chachoox.lithium.api.util.math.StopWatch;
 
 /**
@@ -25,11 +27,17 @@ public class AutoReply extends Module {
                     "How long we want to wait until responding to another message."
             );
 
+    protected final Property<Boolean> customMessage =
+            new Property<>(
+                    false,
+                    new String[]{"Custom Message"}
+            );
+
     protected final StopWatch timer = new StopWatch();
 
     public AutoReply() {
         super("AutoReply", new String[]{"AutoReply", "reply", "replyback"}, "Automatically replies to whispers", Category.MISC);
-        this.offerProperties(message, delay);
+        this.offerProperties(message, delay, customMessage);
         this.offerListeners(new ListenerMessage(this));
     }
 
