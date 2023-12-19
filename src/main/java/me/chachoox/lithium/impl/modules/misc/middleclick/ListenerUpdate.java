@@ -6,7 +6,7 @@ import me.chachoox.lithium.api.util.network.PacketUtil;
 import me.chachoox.lithium.impl.event.events.update.UpdateEvent;
 import me.chachoox.lithium.impl.event.listener.ModuleListener;
 import me.chachoox.lithium.impl.managers.Managers;
-import me.chachoox.lithium.impl.managers.minecraft.RotationManager;
+import me.chachoox.lithium.api.util.rotation.RotationUtil;
 import net.minecraft.init.Items;
 import net.minecraft.network.play.client.CPacketPlayerTryUseItem;
 import net.minecraft.util.EnumHand;
@@ -49,9 +49,7 @@ public class ListenerUpdate extends ModuleListener<MiddleClick, UpdateEvent> {
                 int expSlot = ItemUtil.getItemFromHotbar(Items.EXPERIENCE_BOTTLE);
                 if (expSlot != -1 || mc.player.getHeldItemOffhand().getItem() == Items.ENDER_PEARL && timer.passed(module.delay.getValue() * 10)) {
                     if (module.lookdown.getValue()){
-                        float yaw = MathHelper.wrapDegrees(Managers.ROTATION.getYaw());
-                        float pitch = module.pitch.getValue();
-                        Managers.ROTATION.setRotations(yaw, pitch);
+                        mc.player.rotationPitch = module.pitch.getValue();
                     }
                     int oldSlot = mc.player.inventory.currentItem;
                     ItemUtil.switchTo(expSlot);

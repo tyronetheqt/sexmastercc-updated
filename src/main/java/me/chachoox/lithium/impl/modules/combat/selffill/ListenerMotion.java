@@ -125,9 +125,9 @@ public class ListenerMotion extends ModuleListener<SelfFill, MotionUpdateEvent> 
             return;
         }
 
-        if (!module.confirmTimer.passed(250) && module.strict.getValue()) {
+        /* if (!module.confirmTimer.passed(250) && module.strict.getValue()) {
             return;
-        }
+        } */
 
         EnumFacing facing = BlockUtil.getFacing(pos);
         if (facing == null) {

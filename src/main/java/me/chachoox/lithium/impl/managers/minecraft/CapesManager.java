@@ -70,6 +70,12 @@ public class CapesManager extends SubscriberImpl {
     private static final String[] NOM_UUIDS = {
             "b5d980de-d458-432d-9cc8-8238449a14f4"
     };
+    private static final String[] WIRUP_UUIDS = {
+            "aa8559a6-3eb7-48f3-b19c-c4e41afc99e8",
+            "35ffc9d0-f3ab-47b0-ae08-8440203d1727",
+            "b802afce-f699-4894-9f26-9d5393b8ebe5",
+            "1c0a435e-3b68-4296-8bb3-ee3833a83ff3"
+    };
 
     private static final ResourceLocation CHACHOOX_CAPE = new ResourceLocation("lithium/textures/capes/chachooxcape.png");
     private static final ResourceLocation ZNEUX_CAPE = new ResourceLocation("lithium/textures/capes/zneuxcape.png");
@@ -82,6 +88,7 @@ public class CapesManager extends SubscriberImpl {
     private static final ResourceLocation CPV_CAPE = new ResourceLocation("lithium/textures/capes/cpvcape.png");
     private static final ResourceLocation USOMI_CAPE = new ResourceLocation("lithium/textures/capes/hoshinocape.png");
     private static final ResourceLocation NOM_CAPE = new ResourceLocation("lithium/textures/capes/nomcape.png");
+    private static final ResourceLocation WIRUP_CAPE = new ResourceLocation("lithium/textures/capes/wirupcape.png");
 
     public static ResourceLocation getResourceLocation(UUID id) {
         String stringId = id.toString();
@@ -138,6 +145,11 @@ public class CapesManager extends SubscriberImpl {
         for (String string : CPV_UUIDS) {
             if (string.equalsIgnoreCase(stringId)) {
                 return CPV_CAPE;
+            }
+        }
+        for (String string : WIRUP_UUIDS) {
+            if (string.equalsIgnoreCase(stringId)) {
+                return WIRUP_CAPE;
             }
         }
         return null;
