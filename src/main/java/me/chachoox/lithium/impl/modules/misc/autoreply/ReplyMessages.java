@@ -13,7 +13,7 @@ public enum ReplyMessages {
         this.reply = message;
     }
 
-    public String getReply() {
+    public String getReply()     {
         return reply;
     }
 }

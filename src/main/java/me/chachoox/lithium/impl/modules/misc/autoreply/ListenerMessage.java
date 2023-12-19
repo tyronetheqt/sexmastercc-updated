@@ -38,8 +38,8 @@ public class ListenerMessage extends ModuleListener<AutoReply, PacketEvent.Recei
         final String reply;
 
         if (Managers.FRIEND.isFriend(name)
-                && mc.player.posX > 5000
-                && mc.player.posZ > 5000
+                //&& mc.player.posX > 5000
+                //&& mc.player.posZ > 5000
                 && module.message.getValue() == ReplyMessages.COORDS
                 && Stream.of("coords", "coord", "wya", "cords", "cords?", "where").anyMatch(message::contains)) {
             reply = getCoords();
