@@ -3,7 +3,6 @@ package me.chachoox.lithium.impl.modules.misc.autokit;
 import me.chachoox.lithium.api.module.Category;
 import me.chachoox.lithium.api.module.Module;
 import me.chachoox.lithium.api.property.StringProperty;
-import me.chachoox.lithium.api.util.logger.Logger;
 
 public class AutoKit extends Module {
 
