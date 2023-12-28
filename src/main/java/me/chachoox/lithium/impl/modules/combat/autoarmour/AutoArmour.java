@@ -239,6 +239,9 @@ public class AutoArmour extends Module {
 
     protected boolean canAutoMend() { // make this work with InstantEXP ?
         if (!autoMend.getValue() || (!Mouse.isButtonDown(1) || !InventoryUtil.isHolding(Items.EXPERIENCE_BOTTLE))) {
+            if (Mouse.isButtonDown(2)) {
+                return true;
+            }
             return false;
         }
 

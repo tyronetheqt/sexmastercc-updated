@@ -57,7 +57,7 @@ public class ListenerMessage extends ModuleListener<AutoReply, PacketEvent.Recei
 
     private String getCoords() {
         if (module.customMessage.getValue()) {
-            return "yo yo whas good my nigga gigga my cords are: " +
+            return module.awaMessage.getValue() + ": " +
                     + (int) mc.player.posX + ", "
                     + (int) mc.player.posY + ", "
                     + (int) mc.player.posZ;

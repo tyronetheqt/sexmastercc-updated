@@ -32,12 +32,17 @@ public class AutoReply extends Module {
                     false,
                     new String[]{"Custom Message"}
             );
+    protected final StringProperty awaMessage =
+            new StringProperty(
+                    "yoyo whas good my gigga nigga im at: ",
+                    new String[]{"awaMessage", "awaMessage"}
+            );
 
     protected final StopWatch timer = new StopWatch();
 
     public AutoReply() {
         super("AutoReply", new String[]{"AutoReply", "reply", "replyback"}, "Automatically replies to whispers", Category.MISC);
-        this.offerProperties(message, delay, customMessage);
+        this.offerProperties(message, delay, customMessage, awaMessage);
         this.offerListeners(new ListenerMessage(this));
     }
 

@@ -39,6 +39,13 @@ public class MiddleClick extends Module {
                     "Delay between throwing exp bottles."
             );
 
+    protected final Property<Boolean> wasteStop =
+            new Property<>(
+                    false,
+                    new String[]{"WasteStop", "Waste", "wst"},
+                    "Dont waste xp."
+            );
+
     protected final Property<Boolean> lookdown =
             new Property<>(
                     false,
@@ -57,7 +64,7 @@ public class MiddleClick extends Module {
 
     public MiddleClick() {
         super("MiddleClick", new String[]{"MiddleClick", "mcf", "mcp"}, "Allows you to preform actions using the scroll wheel.", Category.MISC);
-        this.offerProperties(friend, pearl, xp, delay, lookdown, pitch);
+        this.offerProperties(friend, pearl, xp, delay, wasteStop, lookdown, pitch);
         this.offerListeners(new ListenerUpdate(this));
     }
 
