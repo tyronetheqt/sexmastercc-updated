@@ -13,6 +13,11 @@ public class ModelChanger extends Module {
                     new String[]{"AntiSway", "RemoveSway", "NoSway"},
                     "Removes arm swaying when swinging your camera."
             );
+    public final Property<Boolean> oldSwing = new Property<>(
+            false,
+            new String[]{"OldSwing", "oldswingjamin", "siwnginton"},
+            "Adds back the 1.7 swinging animation"
+    );
 
     public final NumberProperty<Float> angleTranslate =
             new NumberProperty<>(
@@ -89,7 +94,7 @@ public class ModelChanger extends Module {
 
     public ModelChanger() {
         super("ViewModelChanger", new String[]{"ViewModelChanger", "viewmodel", "modelchanger"}, "Changes your viewmodel.", Category.RENDER);
-        this.offerProperties(noSway, angleTranslate, offsetMain, offsetOff, translateX, translateY, translateZ, scaleX, scaleY, scaleZ, rotateX, rotateY, rotateZ);
+        this.offerProperties(noSway, oldSwing, angleTranslate, offsetMain, offsetOff, translateX, translateY, translateZ, scaleX, scaleY, scaleZ, rotateX, rotateY, rotateZ);
         this.offerListeners(new ListenerRenderItemSide(this), new ListenerPostRender(this), new ListenerPreRender(this));
     }
 }
